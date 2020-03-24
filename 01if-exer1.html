@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 从键盘输入小明期末成绩：
+    当成绩为100时，奖励BMW
+    80-99，奖励iPhone
+    60-80，一半参考书
+    其他，没奖励 -->
+    <script>
+        var score=prompt("请输入小明的成绩（0-100）：");
+        // alert(score);
+        // 首先判断输入是否合法，字符串都会转换为NaN，用isNaN()来判断
+        if(score>100 || score<0 || isNaN(score)){
+            alert("不要乱整")
+        }else{
+            if(score==100){
+                alert("奖励一辆BMW")
+            }else if(score>=80){
+                alert("奖励一台iPhone15s")
+            }else if(score>=60){
+                alert("奖励一本参考书")
+            }else{
+                alert("什么奖励也没有")
+        }
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

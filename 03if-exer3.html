@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*编写程序，由键盘输入三个整数分别存入变量num1、num2、num3，
+        对他们进行排序，并且从小到大输出。
+        */
+        var num1= +prompt("请输入num1：");
+        var num2= +prompt("请输入num2：");
+        var num3= +prompt("请输入num3：");
+
+        min=num1<num2?num1:num2;
+        var min=min<num3?min:num3;
+
+        max=num1>num2?num1:num2;
+        var max=max>num3?max:num3;
+
+        // alert(min+max);
+        if(min<num1&&max>num1){
+            var mid=num1;
+        }else if(min<num2&&max>num2){
+            var mid=num2;
+        }else{
+            var mid=num3;
+        }
+        // alert(mid);
+        alert(min+mid+max)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
