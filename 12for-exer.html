@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            1、打印99乘法表
+            
+        */ 
+        //创建外层循环，控制乘法表的高度
+        for(var i=1;i<=9;i++){
+            //创建内层循环控制宽度
+            for(var j=1;j<i+1;j++){
+                //用span好控制样式
+                document.write("<span>"+j+"*"+i+"="+j*i+"</span>");
+            }
+            document.write("<br />");
+        }
+
+    </script>
+    <style type="text/css">
+        span{
+            display: inline-block;
+            width:60px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
